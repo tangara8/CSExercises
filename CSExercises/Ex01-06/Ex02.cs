@@ -8,9 +8,15 @@ namespace CSExercises
 {
     public class Ex02
     {
+
         public static void Main(string[] args)
         {
+            int myInt1;
+
+            Console.WriteLine("Please enter a number :");
             
+            myInt1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(Math.Sqrt(myInt1));
         }
     }
 }
