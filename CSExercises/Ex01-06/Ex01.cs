@@ -8,9 +8,10 @@ namespace CSExercises
 {
     public class Ex01
     {
+        String name = Venkat;
         public static void Main(string[] args)
         {
-            
+            Console.WriteLine("Good Morning" + name);
         }
     }
 }
