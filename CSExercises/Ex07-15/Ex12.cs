@@ -10,7 +10,13 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
-            
+            double fixedCharge = 2.40;
+            int distanceTravelled;
+            Console.Write("Enter distance travelled : ");
+            distanceTravelled = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("${0:N2}", (distanceTravelled * 0.4) + fixedCharge);           
+            Console.ReadLine();
+        }
         }
     }
 }
