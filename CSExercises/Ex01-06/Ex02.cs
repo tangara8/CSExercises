@@ -16,7 +16,7 @@ namespace CSExercises
             Console.WriteLine("Please enter a number :");
             
             myInt1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(Math.Sqrt(myInt1));
+            Console.WriteLine(myInt1*myInt1);
         }
     }
 }
