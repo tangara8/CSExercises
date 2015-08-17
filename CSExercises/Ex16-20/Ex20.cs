@@ -41,6 +41,7 @@ using System.Threading.Tasks;
             Console.ReadLine();
         }
             else if (DiscountApplicable > 10000)
+            {
                 discount1 = 0.15 * DiscountApplicable;        
                 tier2 = DiscountApplicable - discount1;
                 Console.WriteLine("${0:.00}", tier2);
