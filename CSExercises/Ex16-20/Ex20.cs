@@ -12,14 +12,14 @@ using System.Threading.Tasks;
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Enter quantity for TV : ");
+             Console.WriteLine("Enter quantity for TV : ");
             int qty = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter quantity for DVD : ");
-            
+
             qty = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter quantity for MP3 : ");
             qty = Convert.ToInt32(Console.ReadLine());
-        
+
             double TVPrice = 900;
             double DVDPrice = 500;
             double MP3Price = 700;
@@ -31,21 +31,31 @@ using System.Threading.Tasks;
             double discount1;
             double tier1;
             double tier2;
+            double TotalPurchase = TotalTVPrice + TotalDVDPrice + TotalMP3Price;
 
-            double DiscountApplicable = TotalTVPrice+ TotalDVDPrice;
+            double DiscountApplicable = TotalTVPrice + TotalDVDPrice;
             if (DiscountApplicable > 5000)
             {
-                discount = 0.1 * DiscountApplicable;            
+                discount = 0.1 * DiscountApplicable;
                 tier1 = DiscountApplicable - discount;
-                Console.WriteLine("${0:.00}", tier1);
-            Console.ReadLine();
-        }
+                Console.WriteLine("Total price for this order is ${0:.00}", tier1);
+                Console.ReadLine();
+            }
             else if (DiscountApplicable > 10000)
             {
-                discount1 = 0.15 * DiscountApplicable;        
+                discount1 = 0.15 * DiscountApplicable;
                 tier2 = DiscountApplicable - discount1;
-                Console.WriteLine("${0:.00}", tier2);
-            Console.ReadLine();
-        
+                Console.WriteLine("Total price for this order is ${0:.00}", tier2);
+                Console.ReadLine();
+
+            }
+            else
+            {
+                Console.WriteLine("Total price for this order is ${0:.00}", TotalPurchase);
+                Console.ReadLine();
+            }
+
         }
+    }
+}
         
