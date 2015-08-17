@@ -12,7 +12,7 @@ using System.Threading.Tasks;
         public static void Main(string[] args)
         {
             Random number = new Random();
-            int secretNumber = number.Next(1, 11);
+            int secretNumber = number.Next(0, 10); // between 0 and 9
             int guess;
             
             do
