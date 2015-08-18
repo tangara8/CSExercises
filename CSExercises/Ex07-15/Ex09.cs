@@ -10,11 +10,10 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
-            int x;
+             Console.Write("Input a number: ");
+            int x = Convert.ToInt32(Console.ReadLine());
             int xSq = x * x;
-            Console.Write("Input a number: ");
-            x = Convert.ToInt32(Console.ReadLine());
-            ConsoleWriteLine("Y = " + (2*(x*x)) - (4*x) + 3));
+            Console.WriteLine("Y = " + (2*(xSq) - (4*x) + 3))
         }
     }
 }
