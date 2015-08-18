@@ -10,12 +10,11 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
-           int temperature;
-            int tempInF;
             Console.Write("Enter a temperature:");
-            temperature = Console.Read(Convert.ToInt32());
-            tempInF = (1.8 * temperature) + 32;
-            Console.WriteLine(tempInF); 
+            double temperature = Convert.ToDouble(Console.Read());
+            double tempInF = ((1.8*temperature) + 32);
+            Console.WriteLine(tempInF);
         }
     }
 }
+        
