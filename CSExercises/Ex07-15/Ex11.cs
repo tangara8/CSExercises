@@ -11,9 +11,8 @@ namespace CSExercises
         public static void Main(string[] args)
         {
             double fixedCharge = 2.40;
-            int distanceTravelled;
             Console.Write("Enter distance travelled : ");
-            distanceTravelled = Convert.ToDouble(Console.ReadLine());
+            double distanceTravelled = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine((distanceTravelled * 0.4)+ fixedCharge);
             Console.ReadLine();
         }
