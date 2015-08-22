@@ -8,12 +8,13 @@
             int number = Convert.ToInt32(Console.ReadLine());
 
 
+            int factorial = 1;
             for (int i = 1; i <= number; i++)
             {
+                factorial = factorial * i;
+            }
 
-                int j = 1;
-                j = j * i;
-                Console.Write("The factorial of the number is" + j);
+                Console.Write("The factorial of the number is " + factorial);
                 Console.ReadLine();
             }
         }
