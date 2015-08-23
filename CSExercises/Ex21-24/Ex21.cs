@@ -14,13 +14,13 @@ namespace CSExercises
              public static void Main(string[] args)
         {
             int number = 88;
-            while (number != 88)
+            do
             {
                 Console.WriteLine("Enter a number : ");
                 Console.ReadLine();
-            }             
+            } while (number != 88);       
                 Console.WriteLine("Lucky you....");
+                Console.ReadLine();
             }
         }
     }
-        
